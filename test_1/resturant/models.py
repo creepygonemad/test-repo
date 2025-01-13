@@ -5,7 +5,8 @@ class Resturant(models.Model):
     name = models.CharField(unique=True, max_length=100, primary_key=True)
     address = models.CharField(max_length=500)
     phone_num = models.CharField(max_length=10)
-    rating =models.SmallIntegerField(null=False, default=0)
+    rating = models.SmallIntegerField(null=False, default=0)
+
 
     def to_dict(self):
         return{
